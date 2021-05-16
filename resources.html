@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Study 4 U | Help</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+    <style> 
+    .social-menu ul {
+    position: absolute;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+    .options{
+      padding-left:450px; 
+    }
+    .options button{  
+      padding: 15px 24px;  
+      background-color: lightCoral; 
+      border: 1px solid SeaShell; 
+      color:white; 
+      cursor: pointer; 
+      float: left; 
+      margin: 5px; 
+
+    }
+    .options button:hover{
+      background-color: linen; 
+      color: black; 
+      border: 1px solid lightYellow; 
+
+    }
+    #top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+    .resources{
+      margin-right:150px; 
+      margin-left:70px; 
+    }
+    .title{
+	color: #0045d6;
+}
+
+.content{
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: black;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.btn{
+	padding: 0.8rem 1.7rem;
+	background-color: black;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.start{
+	color: #1f3;
+}
+.stop{
+	color: #E00;
+}
+
+#continue, .stop, #start{
+	display: none;
+}
+
+
+#seconds{
+	width: 250px;
+	background: none;
+	outline: none;
+	border: none;
+	border-bottom: 4px solid black;
+	padding: 1rem;
+	font-size: 2rem;
+	color: black;
+}
+
+#seconds::placeholder{
+	color: #ddd;
+}
+.menu-area li a {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 25px;
+	font-size: 14px;
+	line-height: 30px;
+	position: relative;
+	z-index: 1;
+  margin-top:5px; 
+}
+.menu-area li {
+	list-style: none;
+	display: inline-block;
+}
+.navigation{
+	padding-top: 25px;
+}
+nav {
+	position: relative;
+	padding: 10px 20px 10px 10px;
+	text-align: right;
+	z-index: 1;
+	background: #333;
+	margin: 0 auto;
+	width: calc(100% - 60px);
+}
+.logo {
+	width: 15%;
+	float: left;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	text-align: left;
+	padding-left: 2%;
+  margin-top:7px; 
+}
+.menu-area li a:hover {
+	background: tomato;
+	color: #fff;
+}
+nav:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 100%;
+	border-top: 10px solid #333;
+	border-right: 10px solid #333;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+nav:after {
+	position: absolute;
+	content: '';
+	border-top: 10px solid #333;
+	border-left: 10px solid #333;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	top: 100%;
+	right: 0;
+}
+    </style> 
+    
+  </head> 
+
+<div class="destress">
+  <body> 
+    <div class="navigation">
+		<nav>
+			<div class="logo">
+				Study4U
+			</div>
+			<ul class="menu-area">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="session.html">Sessions</a>
+				</li>
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+				<li>
+					<a href="fun.html">Courses</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+    <h1 style="text-align:center;font-family:"Shadows into Light", sans-serif;"> Resources </h1> 
+    <p style="text-align:center;" > What's a better way to de-stress than just play games,  funny jokes and hear some motivational quotes?</p1> 
+    <!--
+    <div id ="mySidenav" class= "sidenav"> 
+      <a href ="index.html" id="home"> Home </a>
+      <a href ="courses.html" id="courses">Courses</a>
+      <a href ="de-stress.html"id="De-stress">De-Stress</a>
+      <a href ="community.html" id="community">Community </a>
+    </div> 
+    --> 
+    <div class="options"> 
+      <button id="tictac"> Calculator </button> 
+      <button id="rps">Timer</button> 
+      <button id="jokes"> Translator</button>
+      <button id="music"> Music </button>
+    </div> 
+    
+  
+    
+    <img src="images/quote.jpg" style="display:block; margin-left:auto; margin-right:auto; width:70%; height:450px;">
+    <br><br>
+  <button id="top" style="background-color:transparent; border:2px solid transparent; margin-left:1300px; margin-top:120px;"> <img id="arrow" style="width:40px;height:60px;" src="images/arrow.png"><br> </button> 
+    </body>
+    <div class="resources"> 
+    <h2 style="text-align:center;"> Calculator</h2>
+    <br><br>
+    <iframe height="600px" width="110%" src="https://replit.com/@SahanaGokulakri/Calculator?lite=true&outputonly=1" scrolling="no" frameborder="no"allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    </div> 
+    <br><br>
+    <hr>
+    <br><br> 
+    <div class="resources">
+    <h2 style="text-align:center;">Translator </h2> 
+    <br><br>
+    <iframe height="600px" width="110%" align="center" src="https://replit.com/@KhushiSinha1/Translator?lite=true&outputonly=1" scrolling="no" frameborder="no"allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    <br><br>
+    <hr>
+    <br><br>
+    <h2 style="text-align:center;">Music </h2> 
+    <br><br>
+    <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX8NTLI2TtZa6" width="110%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <br><br>
+    <hr>
+    <div class="footer">
+<br><br>
+
+<!-- animated social media buttons --> 
+
+<div class = "social-menu">
+            <h1 style="text-align: center;font-size:50px;">Other places to find us!</h1> 
+            <ul> 
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+    </ul> 
+              </div>
+              </div> 
+
+    </body> 
+
+    </html> 

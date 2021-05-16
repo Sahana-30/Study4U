@@ -1,0 +1,667 @@
+<!-- Study4U 
+Author: Sahana G
+
+A website that allows to join live 'study with me' with students all around the world.--> 
+
+
+<!DOCTYPE html> 
+<html lang = "en">
+  <head> 
+    <meta charset ="utf-8"> 
+    <title> Home | Study4U</title> 
+    <link rel ="stylesheet" href="css/Study4U.css"> 
+
+    <!-- Google fonts !--> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">  
+    <!--https://i.postimg.cc/YjcJg24M/aa.jpg -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> 
+
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style> 
+    *{
+      margin:0; 
+      height: 100; 
+    }
+    body{
+      width: 100%; 
+
+    }
+    /* This is the hero image*/
+    .img-container{
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('images/studyStream.jpg');	
+  height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	position: relative;
+  height:100vh; 
+    }
+
+    /* This is the text in hero image */
+    .inner-container{
+      text-align: center; 
+      position: absolute; 
+      width:100%; 
+      color: white; 
+      height: auto; 
+      margin-top: 200px; // Change the margin top here
+
+    }
+    h1{
+      font-size: 7em; 
+      font-family: "Shadows into Light", sans-serif; 
+
+    }
+    h2{
+      margin-top: -17px; //change if neccesseary;
+      font-family: "Source Sans Pro", sans-serif; 
+      font-size: 1.7em; 
+      text-align: center; 
+      font-weight: 400; 
+    }
+    /* This is 'Join Session' Button*/
+    a{
+      margin-top: 20px; 
+      font-size: 1.3em; 
+      font-family:"Source Sans Pro", sans-serif; 
+
+    }
+    .btn{
+      display: inline-block; 
+      width:200px; 
+      font-weight:bold; 
+      padding:10px; 
+      color:white; 
+      border: 4px solid #fff; 
+      text-align: center; 
+      outline: none; 
+      text-decoration: none; 
+      transition: background-color 0.2s ease-out, color 0.2s ease-out; 
+    }
+    .btn:hover,.btn:active{
+      background-color:#fff; 
+      color:#000; 
+      transition: background-color 0.3s ease-in,color 0.3s ease-in; 
+    }
+    
+    /* Navigation */
+  .menu-area li a {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 25px;
+	font-size: 14px;
+	line-height: 30px;
+	position: relative;
+	z-index: 1;
+  margin-top:5px; 
+}
+.menu-area li {
+	list-style: none;
+	display: inline-block;
+}
+.navigation{
+	padding-top: 25px;
+}
+nav {
+	position: relative;
+	padding: 10px 20px 10px 10px;
+	text-align: right;
+	z-index: 1;
+	background: #333;
+	margin: 0 auto;
+	width: calc(100% - 60px);
+}
+.logo {
+	width: 15%;
+	float: left;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	text-align: left;
+	padding-left: 2%;
+  margin-top:7px; 
+}
+.menu-area li a:hover {
+	background: tomato;
+	color: #fff;
+}
+nav:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 100%;
+	border-top: 10px solid #333;
+	border-right: 10px solid #333;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+nav:after {
+	position: absolute;
+	content: '';
+	border-top: 10px solid #333;
+	border-left: 10px solid #333;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	top: 100%;
+	right: 0;
+}
+
+/* About Us*/
+.about-section{
+    background: url(images/female.jpg) no-repeat left;
+    background-size: 40%;
+    background-color:white ;
+    overflow: hidden;
+    padding: 100px 10px;
+}
+
+.inner-container1{
+    width: 40%;
+    float: right;
+    background-color:white;
+    padding: 150px;
+}
+
+.inner-container1 h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+
+}
+.buttons{
+  font-family: "Shadows into Light", sans-serif; 
+
+}
+/* Report Findings section */ 
+.report{
+  background-color:#fdfdfd; 
+}
+.container{
+  width:900px; 
+  background: #fff; 
+  margin: 50px auto; 
+  padding:30px; 
+  border-radius: 10px; 
+  box-shadow: 2 20px 25px rgba(58,55,55,0.2); 
+}
+@keyframes Load {
+  from{
+    width:0%; 
+  }
+}
+@-webkit-keyframes Load{
+  from{
+    width:0%; 
+  }
+}
+@-moz-keyframes Load{
+  from{
+    width:0%; 
+  }
+}
+@-o-keyframes Load{
+  from{
+    width:0%; 
+  }
+}
+.box{
+  List-style: none; 
+  margin:0; 
+  padding:0; 
+
+}
+.box li h5{
+  margin-bottom: 10px; 
+}
+.bar{
+  height: 18px; 
+  background-color: #eee; 
+  margin-bottom:15px; 
+  border-radius: 15px; 
+}
+.bar::before{
+  content: ""; 
+  background-color: black; 
+  display:inline-block; 
+  padding: 8px; 
+  border-radius: inherit; 
+  animation: load 3s 0s; 
+  -webkit-animation: load 3s 0s; 
+  -moz-animation: load 3s 0s; 
+  -o-animation: load 3s 0s; 
+
+}
+.bar.bar1::before{
+  width:calc(85% - 10px); 
+}
+.bar.bar2::before{
+  width:calc(65% - 10px); 
+}
+.bar.bar3::before{
+  width:calc(88% - 10px); 
+}
+
+/* Meet The Team*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+  padding: 0 15px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.team{
+  margin-right:50px; 
+  margin-left:50px; 
+}
+
+/*Newsletter */
+.news {
+  padding: 60px;
+  background-color:#fdfdfd;
+  padding-left:150px; 
+  text-align: center; 
+} 
+.news-section{
+  text-align:center;
+}
+.Name, .Email{
+  background: none; 
+  border:none; 
+  outline:none; 
+  border-bottom:1px solid; 
+  color:#888; 
+  font-size: 14px; 
+}
+.Name{
+  float:left; 
+  width:300px; 
+}
+.Email{ 
+  float:left; 
+  width: 300px; 
+}
+form {
+  border: 4px solid #fdfdfd;
+}
+#top{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+#submit-button{
+  background: none;
+  color: #70a1ff;
+  border: 1px solid #70a1ff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+  }
+#submit-button:hover{ 
+  background: #70a1ff;
+  color: #fff;
+}
+
+/*Contact Section */ 
+.contact-section button{
+  background: none;
+  color: #70a1ff;
+  border: 1px solid #70a1ff;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.contact-section button:hover{
+  background: #70a1ff;
+  color: #fff;
+}
+.contact-section{
+  background:none;
+  padding: 20px 0;
+  text-align: center;
+}
+.name,.email,.message{
+  background: none;
+  border:none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: #888;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.name{
+  float: center;
+  width: 500px;
+}
+
+.email{
+  float: center;
+  width: 500px;
+}
+
+.message{
+ float:center; 
+ width: 500px;
+}
+/* Social media*/
+.social-menu ul {
+    position: absolute;
+    top: 670%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+    
+    </style> 
+  </head> 
+  <body>
+    
+
+  <!-- Text and image in the header --> 
+
+    <div class="img-container"> 
+      <!--Navigation menu -->
+      <div class="navigation">
+		<nav>
+			<div class="logo">
+				Study4U
+			</div>
+			<ul class="menu-area">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="session.html">Sessions</a>
+				</li>
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+				<li>
+					<a href="fun.html">Courses</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+
+      <div class="inner-container"> 
+        <h1> STUDY 4 U</h2>
+        <h2> Feeling unmotivated to study? Don't worry, join dozens of students just like you, and study together! </h2> 
+        <a class="btn" href="session.html"> Join Session </a> 
+      </div> 
+    </div> 
+  <!-- About Us --> 
+  <button id="top" style="background-color:transparent; border:2px solid transparent; margin-left:1300px; margin-top:120px;"> <img id="arrow" style="width:40px;height:60px;" src="images/arrow.png"><br> </button>  
+  <br><br>
+  <div class ="about-section"> 
+   <div class="inner-container1"> 
+     <h1 style="font-size:30px; color:black; ">About Us </h1> 
+     <p class ="text"> 
+        More than ever before, we started coming up with some life changing courses. We provide classes for fitness, and growth mindset. We believe health is not just about physical, it's also about being mentally well and healthy.A healthful diet typically includes nutrient-dense foods from all major food groups, including lean proteins, whole grains, healthful fats, and fruits and vegetables of many colors.
+    </p> 
+	      <div class="skills">
+		      <span class="buttons" > Committment </span> 
+	        <span class="buttons"> Fun </span> 
+	        <span class="buttons"> Motivation </span> 
+	        <span class="buttons">  Determined </span>
+	      </div>
+      </div> 
+    </div> 
+    <br><br> 
+    <hr>
+    <br><br>
+
+
+    <!-- Skills (animated) -->
+  <div class="report"> 
+    <div class="container"> 
+      <h1 style="font-size:50px; color:black;text-align:center; margin-bottom:10px;"> Our Report </h1> 
+      <br><br>
+      <ul class="box">
+        <li> 
+          <h5> Motivated Student here (85%) </h5>
+          <span class="bar bar1"</span> 
+        </li> 
+        <br><br>
+        <li> 
+          <h5> 'Study With Me' Increase (65%) </h5>
+          <span class="bar bar2"</span>
+        </li> 
+        <br><br>
+        <li> 
+          <h5> People Benefitted from this Website (88%) </h5>
+          <span class="bar bar3"</span>
+        </li> 
+        <br><br>
+      </ul> 
+    </div> 
+  </div> 
+<br><br> 
+<hr> 
+<br><br>
+
+
+<!--Meet the team --> 
+<h1 style="font-size:50px; color:black;text-align:center; margin-bottom:10px;" > Meet The Team </h2>
+<p style="text-align:center;">Get To know us! </p>
+</div> 
+<br>
+<div class="team"> 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/teamMem1.jpg" alt="Jane" style="width:100%; ">
+      <div class="container2">
+        <h2>Johan Zee</h2>
+        <br>
+        <p class="title">CEO & Founder</p>
+        <br>
+        <p>A chief executive officer (CEO) is the highest-ranking executive in a company, whose primary responsibilities include making major corporate decisions, managing the overall operations and resources of a company, acting as the main point of communication between the board of directors (the board) and corporate</p>
+        <br>
+        <p>example@example.com</p>
+        <br>
+        <p><button class="button1">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/teamMem2.jpg" alt="Mike" style="width:100%; " >
+      <div class="container2">
+        <h2>Lizy Rose</h2>
+        <br>
+        <p class="title">Outreach Co-ordinater</p>
+        <br>
+        <p>Image result for description of a outreach worker
+An outreach worker is responsible for supporting community events and relief efforts to assist citizens with their needs, providing them resources, and facilitating lifestyle programs. Outreach workers coordinate with participants, suppliers, and sponsors for funding and promotions. </p>
+<br>
+        <p>example@example.com</p>
+        <br>
+        <p><button class="button1">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/teamMem3.jpg" alt="John" style="width:100%; ">
+      <div class="container2">
+        <h2>Emma</h2>
+        <br>
+        <p class="title">Finance & Logistics</p>
+        <br>
+        <p>Logisticians oversee activities that include purchasing, transportation, inventory, and warehousing. ... They operate software programs designed specifically to manage logistical functions, such as procurement, inventory management, and other supply chain planning and management systems.</p>
+        <br>
+        <p>example@example.com</p>
+        <br>
+        <p><button class="button1">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>  
+<br><br>
+<hr>
+<br><br> 
+
+
+<!--Newsletter  --> 
+<form action="action_page.php">
+  <div class="news">
+    <h1 style="font-size:50px; color:black;text-align:center; margin-bottom:10px;">Subscribe to our Newsletter!</h1>
+    <br>
+    <p style="color:gray; ">Subscribe to our monthly newsletter for study tips, productivity, time management.You name it. And, we promise <em> WE WON'T SPAM YOU! </em> </p>
+  </div>
+  <div class="news" style="background-color:white;">
+    <div class="news-section"> 
+    <input type="text" placeholder="Name" class="Name" name="name" required>
+    <br/>
+    <br/> 
+    <br/>
+    <input type="email" class="Email"placeholder="Email address" name="mail" required>
+    </div> 
+    <br>
+    <label>
+    <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+  <div class="news">
+    <input id ="submit-button" type="submit" value="Subscribe">
+  </div>
+</form>
+<br><br>
+<hr>
+<br><br>
+
+
+<!--Contact Section --> 
+<form> 
+<div class ="contact-section"> 
+  <div class ="inner-width"> 
+    <h1 style="font-size:50px; color:black;text-align:center; margin-bottom:10px;"> Get in Touch!</h1> 
+    <input type ="text" class="name" placeholder="Your Name"> 
+    <br>
+    <input type ="email" class="email" placeholder="Your Email"> 
+    <br>
+    <textarea rows ="1" type ="text" placeholder ="Message" class = "message"> </textarea> 
+    <br>
+    <button> Get in Touch </button> 
+
+    </div> 
+  </div> 
+  </form> 
+<br><br>
+<hr>
+<div class="footer">
+<br><br>
+
+<!-- animated social media buttons --> 
+
+<div class = "social-menu">
+            <h1 style="text-align: center;font-size:50px;">Other places to find us!</h1> 
+            <ul> 
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+    </ul> 
+              </div>
+              </div> 
+            
+
+
+
+
+    </body> 
+    <script> 
+    var top = document.getElementById('top');
+
+    function up(){
+      window.scrollTo(0,0);
+    }
+
+    top.addEventListener("click",up);
+    </script> 
+  </html> 
